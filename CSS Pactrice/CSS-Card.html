@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Desigh</title>
+    <style>
+        .card-container{
+            box-sizing: border-box;
+            display: flex;
+            background-color: bisque;
+            flex-flow: wrap row;
+            padding: 20px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 5px black;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 5px 5px black;
+        }
+        .img-style{
+            width:100%;
+            border: 1px solid;
+        }
+        .card-body{
+            /* margin: 0px 5px; */
+            padding: 5px;
+            background-color: aqua;
+        }
+        .card-title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .card-desc{
+            text-align: justify;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="logo-icon/facebook logo.png" alt="facebook logo" class="img-style">
+            <div class="card-body">
+                <div class="card-title">
+                    Fackbook
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique tempora temporibus libero ducimus, in aliquid deleniti sapiente eveniet quis facilis laudantium unde laboriosam quas pariatur corrupti ab eos dignissimos ipsam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logo-icon/github.png" alt="facebook logo" class="img-style">
+            <div class="card-body">
+                <div class="card-title">
+                    Github
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique tempora temporibus libero ducimus, in aliquid deleniti sapiente eveniet quis facilis laudantium unde laboriosam quas pariatur corrupti ab eos dignissimos ipsam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logo-icon/linkdin.png" alt="facebook logo" class="img-style">
+            <div class="card-body">
+                <div class="card-title">
+                    Linkedin
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique tempora temporibus libero ducimus, in aliquid deleniti sapiente eveniet quis facilis laudantium unde laboriosam quas pariatur corrupti ab eos dignissimos ipsam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

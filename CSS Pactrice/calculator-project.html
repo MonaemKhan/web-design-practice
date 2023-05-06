@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <style>
+        .calculator-body{
+            /* background-color: blue; */
+            height: fit-content;
+            /* width: fit-content; */
+            text-align: center;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title{
+            font-size: 2rem;
+        }
+
+        .input-box-design{
+            width: 230px;
+            height: 70px;
+            font-size: 1.5rem;
+            box-shadow: 1px -1px 2px black;
+            text-align: right;
+            padding: 0 5px;
+            letter-spacing: 3px;
+        }
+
+        .button-box1, .button-box2, .button-box3, .button-box4, .button-box5{
+            /* background-color: antiquewhite; */
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+        }
+        .button{
+            width: 58px;
+            height: 50px;
+            padding: 5px;
+            margin: 2px;
+            background-color: black;
+            color: white;
+        }
+        .button:hover{
+            background-color: #ffbfcb;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .operation-symbol{
+            background-color: blueviolet;
+        }
+        .equal-symbol{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <div class="title">
+            Calculator
+        </div>
+        <div class="box">
+            <input type="text" maxlength="10" class="input-box-design">
+        </div>
+        <div class="button-box1">
+            <input type="button" value="C" class="button">
+            <input type="button" value="+/-" class="button">
+            <input type="button" value="%" class="button">
+            <input type="button" value="/" class="button operation-symbol">
+        </div>
+
+        <div class="button-box2">
+            <input type="button" value="7" class="button">
+            <input type="button" value="8" class="button">
+            <input type="button" value="9" class="button">
+            <input type="button" value="x" class="button operation-symbol">
+        </div>
+
+        <div class="button-box3">
+            <input type="button" value="4" class="button">
+            <input type="button" value="5" class="button">
+            <input type="button" value="6" class="button">
+            <input type="button" value="-" class="button operation-symbol">
+        </div>
+        <div class="button-box4">
+            <input type="button" value="1" class="button">
+            <input type="button" value="2" class="button">
+            <input type="button" value="3" class="button">
+            <input type="button" value="+" class="button operation-symbol">
+        </div>
+        <div class="button-box5">
+            <input type="button" value="0" class="button">
+            <input type="button" value="." class="button">
+            <input type="button" value="DEL" class="button">
+            <input type="button" value="=" class="button equal-symbol">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
