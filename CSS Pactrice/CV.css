@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* header section */
+header{
+    display: block;
+}
+#bio_pic img{
+    float: left;
+    /* background-color: aqua; */
+    border-radius: 60px;
+    max-height: 150px;
+    /* max-width: 100px; */
+}
+#bio_name{
+    margin-left: 10px;
+    padding-top:30px;
+    float: left;
+}
+#bio_address{
+    margin-right: 50px;
+    float: right;
+    /* border: 2px solid; */
+}
+#bio_address ul li img{
+    display: inline;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 15px;
+}
+#bio_address ul li:nth-child(5) img{
+    height: 10px;
+}
+#bio_address ul li a{
+    display: inline;
+    color: black;
+    text-decoration: none;
+}
+
+/* aboutme section  */
+#about_me{
+    margin-top: 10px;
+    display: inline-block;
+}
+#about_me p{
+    margin-right: 20px;
+    background-color: #0263aa;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#about_me div{
+    margin-right: 20px;
+    padding-left: 10px;
+    text-align: justify;
+}
+#about_me div::first-letter{
+    font-size: 2rem;
+}
+
+/* Education */
+#education{
+    /* float: left; */
+    margin-top: 10px;
+    display: inline-block;
+    width: 49%;
+}
+#education p{
+    margin-right: 20px;
+    background-color: #0263aa;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#education table{
+    /* width: 97%; */
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#education table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+#education th,td,tr{
+    padding: 5px;
+}
+
+/* skill */
+#skill{
+    margin-top: 10px;
+    display: inline-block;
+    width: 50%;
+}
+#skill p{
+    margin-right: 20px;
+    background-color: #0263aa;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#skill div table{
+    table-layout: auto;
+    border: 2px solid blue;
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#skill table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+#skill th,td,tr{
+    padding: 5px;
+}
+
+/* projects */
+#projects_done{
+    display: block;
+    margin-top: 10px;
+}
+/* #projects_done p{
+    See in inline tag
+} */
+#projects_done table{
+    /* width: 97%; */
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#projects_done table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+#projects_done th,td,tr{
+    padding: 5px;
+}
+
+/* achivement */
+#achivement{
+    margin-top: 10px;
+    display: inline-block;
+    width: 49%;
+}
+#achivement p{
+    margin-right: 20px;
+    background-color: #0263aa;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#achivement ul{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 95%;
+}
+#achivement ul li{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* extra curriculum acctivites */
+#extra{
+    margin-top: 5px;
+    display: inline-block;
+    width: 50%;
+}
+#extra p{
+    /* margin-right: 20px; */
+    background-color: #0263aa;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#extra ul{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 95%;
+}
+#extra ul li{
+    margin-left: 10px;
+    margin-top: 5px;
+}

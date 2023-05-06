@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        nav{
+            border: 2px solid black;
+            /* width: 100%; */
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .edit{
+            display: inline-block;
+            width: 24%;
+            border: 2px solid red;
+        }
+        .box{
+            text-align: justify;
+            width: 47%;
+            float: left;
+            padding: 10px;
+        }
+        .box2{
+            text-align: justify;
+            width: 47%;
+            float: right;
+            padding: 10px;
+        }
+        .box3{
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width:405px) {
+            .edit{
+                width: 23%;
+            }
+            .box{
+                width: 44%;
+                height: 200px;
+                padding: 10px;
+                overflow: auto;
+                border: 1px solid black;
+            }
+            .box2{
+                width: 44%;
+                height: 200px;
+                overflow: auto;
+                overflow: auto;
+                border: 1px solid black;
+            }
+        }
+    </style>  
+</head>
+<body>
+    <nav>
+       <p class="edit">This</p>
+       <p class="edit">Is</p>
+       <p class="edit">Navigation</p>
+       <p class="edit">Bar</p>
+    </nav>
+    <div style="clear:both"></div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ullam! Dolores fuga libero vitae? Velit tempora veritatis cumque aspernatur corporis molestiae, totam ipsam accusantium blanditiis ad, optio sapiente repellendus ab necessitatibus officiis enim vel, iure explicabo atque recusandae autem. Ipsam, beatae tenetur? Veniam culpa aut porro quis consequatur excepturi cumque incidunt nulla facere quo. Maxime recusandae soluta, numquam eos eius aliquam culpa dolor sequi reiciendis. Minima soluta culpa minus quam neque. Quidem reiciendis sunt, repudiandae fugiat eius quasi unde laborum incidunt cupiditate, aspernatur iusto earum, nam non? Recusandae quos nostrum ipsum dignissimos animi, laudantium laborum, adipisci nam iure voluptas consequatur.
+    </div>
+    
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ullam! Dolores fuga libero vitae? Velit tempora veritatis cumque aspernatur corporis molestiae, totam ipsam accusantium blanditiis ad, optio sapiente repellendus ab necessitatibus officiis enim vel, iure explicabo atque recusandae autem. Ipsam, beatae tenetur? Veniam culpa aut porro quis consequatur excepturi cumque incidunt nulla facere quo. Maxime recusandae soluta, numquam eos eius aliquam culpa dolor sequi reiciendis. Minima soluta culpa minus quam neque. Quidem reiciendis sunt, repudiandae fugiat eius quasi unde laborum incidunt cupiditate, aspernatur iusto earum, nam non? Recusandae quos nostrum ipsum dignissimos animi, laudantium laborum, adipisci nam iure voluptas consequatur.
+    </div>
+    <div style="clear:both"></div>
+    <div class="box3">
+        <hr>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, repellendus? Sit at inventore quidem reiciendis atque debitis possimus deleniti veniam adipisci itaque, incidunt optio dicta impedit, officia dolores praesentium a obcaecati provident ipsum illo enim eaque? Vero, atque officia! Accusantium ad quae ullam provident libero architecto exercitationem quasi. Placeat adipisci labore maxime perferendis deserunt voluptates laborum dolores consectetur reiciendis corporis repellendus nobis, necessitatibus dignissimos cupiditate, iusto quo possimus facilis sint porro eius sed reprehenderit temporibus autem! Exercitationem iste voluptatibus culpa? Harum quas minus nisi animi deserunt, ipsum dolore natus autem mollitia vitae culpa cupiditate est laudantium ratione, exercitationem sed eos?
+    </div>
+</body>
+</html>

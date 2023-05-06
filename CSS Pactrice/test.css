@@ -1,0 +1,124 @@
+header{
+    /* border: 2px solid black; */
+    height: 160px;
+}
+header div{
+    /* border: 2px solid green; */
+    display: inline;
+}
+.image{
+    float: left;
+    border-radius: 60px;
+    max-height: 150px;
+}
+#bio{
+    float: left;
+    margin-left: 10px;
+    padding-top:30px;
+}
+#bio_details{
+    float: right;
+}
+#bio_details ul li img{
+    display: inline;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 15px;
+}
+#bio_details ul li:nth-child(5) img{
+    height: 10px;
+}
+
+#aboutme{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+#aboutme_title{
+    /* border: 1px solid green; */
+    background-color: #0263aa;
+    font-size: 2rem;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#aboutme_details{
+    margin-right: 15px;
+    padding-left: 10px;
+    text-align: justify;
+    /* border: 1px solid green; */
+}
+#aboutme_details::first-letter{
+    font-size: 1.5rem;
+}
+
+#middle{
+    display: block;
+    border: 2px solid red;
+}
+
+#education{
+    float: left;
+    margin-top: 10px;
+    width: 45%;
+    border: 1px solid black;
+}
+#education_title{
+    /* border: 1px solid green; */
+    background-color: #0263aa;
+    font-size: 2rem;
+    padding-left: 10px;
+    border-radius: 4px;
+
+}
+#education_details{
+    margin-top:5px ;
+    /* border: 1px solid green; */
+}
+#education_details table{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#skill{
+    float: right;
+    margin-top: 10px;
+    width: 45%;
+    border: 1px solid black;
+}
+#skill_title{
+    /* border: 1px solid green; */
+    font-size: 2rem;
+}
+#skill_details{
+    margin-top:5px ;
+    /* border: 1px solid green; */
+}
+
+#project{
+    display: inline-block;
+    margin-top: 10px;
+    width: 45%;
+    border: 1px solid black;
+}
+#project_title{
+    /* border: 1px solid green; */
+    font-size: 2rem;
+}
+#project_details{
+    margin-top:5px ;
+    /* border: 1px solid green; */
+}
+
+#other{
+    display: inline-block;
+    margin-top: 10px;
+    width: 45%;
+    border: 1px solid black;
+}
+#other_title{
+    /* border: 1px solid green; */
+    font-size: 2rem;
+}
+#other_details{
+    margin-top:5px ;
+    /* border: 1px solid green; */
+}
