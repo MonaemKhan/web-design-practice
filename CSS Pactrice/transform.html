@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            height: 200px;
+            width: 25%;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            text-align: center;
+            background-color: cadetblue;
+            margin-top: 10px;
+            transition: 3s;
+        }
+        .scal:hover{
+            transform: scale(1.25);
+        }
+        .rotate:hover{
+            transform: rotate(180deg);
+        }
+        .skew:hover{
+            transform: skew(45deg);
+        }
+        .translate:hover{
+            transform: translate(700px,0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="scal">
+        <h1>Scale</h1>
+    </div>
+    <div class="rotate">
+        <h1>Rotate</h1>
+    </div>
+    <div class="skew">
+        <h1>Skew</h1>
+    </div>
+    <div class="translate">
+        <h1>Translate</h1>
+    </div>
+</body>
+</html>

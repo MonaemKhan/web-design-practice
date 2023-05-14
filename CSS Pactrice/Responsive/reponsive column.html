@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive column</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex:25%;
+            padding: 10px;
+        }
+        .column{
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+        @media screen and (max-width:405px){
+            /* .column{
+            float: left;
+            width: 100%;
+        } */
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus labore autem nobis, laboriosam quis inventore, facilis minima, error voluptates architecto! At ea magnam est blanditiis ad dolorum minus optio ab asperiores sed, ut placeat assumenda reiciendis libero quae illo ullam praesentium laudantium necessitatibus! Impedit consectetur quam voluptatibus incidunt dolorum!</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus labore autem nobis, laboriosam quis inventore, facilis minima, error voluptates architecto! At ea magnam est blanditiis ad dolorum minus optio ab asperiores sed, ut placeat assumenda reiciendis libero quae illo ullam praesentium laudantium necessitatibus! Impedit consectetur quam voluptatibus incidunt dolorum!</p>
+        </div>
+        <div class="column">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus labore autem nobis, laboriosam quis inventore, facilis minima, error voluptates architecto! At ea magnam est blanditiis ad dolorum minus optio ab asperiores sed, ut placeat assumenda reiciendis libero quae illo ullam praesentium laudantium necessitatibus! Impedit consectetur quam voluptatibus incidunt dolorum!</p>
+        </div>
+        <div class="column">
+            <h1>Bootstrap</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus labore autem nobis, laboriosam quis inventore, facilis minima, error voluptates architecto! At ea magnam est blanditiis ad dolorum minus optio ab asperiores sed, ut placeat assumenda reiciendis libero quae illo ullam praesentium laudantium necessitatibus! Impedit consectetur quam voluptatibus incidunt dolorum!</p>
+        </div>
+    </div>
+</body>
+</html>
