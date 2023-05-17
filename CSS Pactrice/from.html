@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Design</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* input[type=text]{
+            width:100%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 20px 0;
+            box-sizing: border-box;
+            border: 3px solid salmon;
+        }
+
+        #search{
+            background-image:url("logo-icon/search.png");
+            background-repeat: no-repeat;
+            width: 150px;
+            font-size: 1rem;
+            padding: 15px 40px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #search:focus{
+            background-color: sienna;
+            width: 100%;
+        } */
+
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 20px;
+            border: 3px solid gray;
+            border-radius: 10px;
+        }
+        input[type=button], input[type=reset]{
+            width: 100px;
+            border: none;
+            background-color: indianred;
+            color: whitesmoke;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        select{
+            width: 50%;
+            padding: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <!-- <input type="text" name="Search" id="search" placeholder="search">
+
+        <br>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname"> -->
+
+        <!-- <label for="pass">Password</label>
+        <input type="password" name="lname" id=";name"> -->
+
+        <textarea name="" id="" cols="30" rows="10">Comment</textarea>
+        <p></p>
+        <input type="button" value="Submit">
+
+        <input type="reset" value="Reset">
+
+        <p></p>
+        <select name="subject_name" id="subjects">
+            <option value="C">C Program</option>
+            <option value="C++">C++ Program</option>
+            <option value="java">Java</option>
+        </select>
+    </form>
+</body>
+</html>

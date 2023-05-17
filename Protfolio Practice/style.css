@@ -1,0 +1,465 @@
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Satisfy', cursive; */
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.dotted-hr {
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* navbar design start here */
+.navbar {
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.navbar-menu a {
+    background-color: #40868b;
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+    transition: transform 1s;
+}
+
+.navbar-menu a:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* navbar design ends here */
+
+/* profile start here */
+
+.profile {
+    padding: 70px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.profile .top--icon {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+
+.profile .top--icon:hover {
+    transform: rotate(360deg);
+}
+
+.profile-desc h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.profile-desc p {
+    font-size: 1.3rem;
+    color: gray;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 90%;
+}
+
+.profile .bottom--icon {
+    position: absolute;
+    left: 60px;
+    /* bottom: 10px; */
+    transition: transform 2s;
+}
+
+.profile .bottom--icon:hover {
+    transform: rotate(-360deg);
+}
+
+.profile::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* profile end here */
+
+/* about me design start here  */
+
+.about-me {
+    margin-top: 35px;
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-me::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aboutme-image img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+}
+
+.about-me p {
+    text-align: center;
+}
+
+.about-me a {
+    font-size: 1.2rem;
+}
+
+.cv-button {
+    background-color: #052d2f;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+/* about me design end here  */
+
+/* professional design start here */
+.professional-experience {
+    padding: 1% 7%;
+}
+
+.professional-experience .card {
+    background-color: #839e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: auto;
+}
+
+.professional-experience .card:hover {
+    box-shadow: 0px 4px 8px 5px black;
+}
+
+.professional-experience::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-icon {
+    text-align: center;
+
+}
+
+.card-icon img {
+    margin-top: 20px;
+    width: 120px;
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.card-title h2 {
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1000px;
+}
+
+.card-desc ol li{
+    font-size: 1.3rem;
+    margin: 30px;
+}
+
+/* animated skill bar */
+
+.skill-container li {
+    list-style: none;
+    margin: 50px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skill-container li::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+    background-color: rgb(170, 167, 173);
+    width: 100%;
+    height: 25px;
+}
+
+.skill-container li::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+    background-color: rgb(249, 249, 250);
+    width: 0%;
+    height: 25px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    /* animation-iteration-count:infinite; */
+    animation-direction: forward;
+    animation-fill-mode: forwards;
+}
+
+.skill-container li.java::after {
+    animation-name: java;
+}
+
+@keyframes java {
+    to {
+        width: 70%;
+        background-color: limegreen;
+    }
+}
+.skill-container li.asp::after {
+    animation-name: asp;
+}
+
+@keyframes asp {
+    to {
+        width: 60%;
+        background-color: limegreen;
+    }
+}
+.skill-container li.python::after {
+    animation-name: python;
+}
+
+@keyframes python {
+    to {
+        width: 55%;
+        background-color: orange;
+    }
+}
+.skill-container li.js::after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 65%;
+        background-color: limegreen;
+    }
+}
+.skill-container li.bs::after {
+    animation-name: bs;
+}
+
+@keyframes bs {
+    to {
+        width: 00%;
+        background-color: red;
+    }
+}
+
+.skill-container li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+        background-color: green;
+    }
+}
+
+.skill-container li.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to{
+        width:80%;
+        background-color: green;
+    }
+}
+
+.skill-container li.git::after {
+    animation-name: git;
+}
+
+@keyframes git {
+    to {
+        width: 30%;
+        background-color: red;
+    }
+}
+
+.skill-container li.db::after {
+    animation-name: db;
+}
+
+@keyframes db {
+    to {
+        width: 40%;
+        background-color: red;
+    }
+}
+
+/* professional design ends here */
+
+/* achivement-contact design start here */
+.achivement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+}
+.achivement-contact::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.conatct{
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.conatct input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.conatct button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+    transition: transform 1s,font-size 2s;
+}
+.conatct button:hover{
+    transform: scale(1.1);
+    font-size: 1.1rem;
+}
+
+/*            */
+
+.contact-logo-link{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.contact-logo{
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.contact-logo img{
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    transition: width 1s;
+    /* height: 100px; */
+}
+.contact-logo img:hover{
+    width: 80px;
+    box-shadow: 0px 4px 5px 5px gray;
+}
+/* achivement-contact design end here */
+
+/* footer design start from here */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-top: 10px solid white;
+}
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0px;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+/* footer Design ends here */

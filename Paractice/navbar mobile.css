@@ -1,0 +1,11 @@
+.nav-details{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    background-color: blueviolet;
+}
+
+.nav-details a{
+    margin: auto;
+    padding: auto;
+}
