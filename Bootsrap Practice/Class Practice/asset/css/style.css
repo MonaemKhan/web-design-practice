@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sacramento&display=swap');
+
+:root {
+    --font_regular: 'Cormorant Garamond', serif;
+    --font_style_italic: 'Sacramento', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font_regular);
+    background-color: antiquewhite;
+}
+
+
+/* nav bar start from here */
+
+.navbar {
+    background: linear-gradient(to right, #009900 0%, #ff99ff 100%);
+}
+
+.navbar .navbar-brand {
+    margin-right: 100px;
+    margin-left: 30px;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .sign-in-up {
+    color: black !important;
+    background-color: rgb(96, 134, 240);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+}
+
+.navbar .signinout-outter-class {
+    margin-right: 50px;
+}
+
+/* nav bar ends here */
+
+/* breadcrump design start here  */
+.breadcrumb-item-heading {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black !important;
+    font-family: var(--font_style_italic);
+}
+
+.breadcrumb-item-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* breadcrump design ends here  */
+
+/* carosel design start here  */
+.carousel .carousel-inner .carousel-item img{
+    width: 100% !important;
+    height: 600px;
+}
+/* carosel design ends here  */
+
+/* contact page design start here  */
+.form-design{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+/* contact page design ends here  */
+
+/* footer design start here  */
+.footer-upper-text-section {
+    background-color: gray !important;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.footer-upper-icon-section a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* footer design ends here  */

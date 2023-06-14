@@ -1,0 +1,19 @@
+@media (max-width: 992px){
+
+    .navbar .navbar-nav .nav-item{
+        margin-top: 15px !important;
+        text-align: center !important;
+        border-bottom: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .navbar .navbar-nav .sign-in-up{
+        width: 100%;
+        margin-left: 20px;
+        border: none;
+    }
+
+    .carousel .carousel-inner .carousel-item img{
+        height: 300px;
+    }
+}
