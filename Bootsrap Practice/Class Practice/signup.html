@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="./asset/icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <link rel="stylesheet" href="./asset/css/responsive.css">
+  <style>
+    .signupform {
+      margin: 10px;
+      padding: 50px;
+    }
+  </style>
 </head>
 
 <body>
@@ -88,7 +94,135 @@
     </div>
   </div> -->
   <!-- breadcrumb ends Here -->
-  <div style="width:100%;height:450px;border:1px solid red;"></div>
+
+  <!-- signup form start from here  -->
+  <div class="signupform">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">Frist Name</label>
+        <input type="name" class="form-control" id="inputFirstName">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLastName" class="form-label">Last Name</label>
+        <input type="name" class="form-control" id="inputLastName">
+      </div>
+      <div class="col-md-6">
+        <label for="GenderMale" class="form-label">Gender</label>
+        <div class="d-md-flex">
+          <div class="form-check col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="GenderMale">
+            <label class="form-check-label" for="GenderMale">
+              Male
+            </label>
+          </div>
+          <div class="form-check col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="GenderFemale">
+            <label class="form-check-label" for="GenderFemale">
+              Female
+            </label>
+          </div>
+          <div class="form-check col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="GenderOthers">
+            <label class="form-check-label" for="GenderOthers">
+              Others
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Religion</label>
+        <div class="d-md-flex">
+          <div class="form-check  religionclass col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="ReligionIslam">
+            <label class="form-check-label" for="ReligionIslam">
+              Islam
+            </label>
+          </div>
+          <div class="form-check  religionclass col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="ReligionHindu">
+            <label class="form-check-label" for="ReligionHindu">
+              Hindu
+            </label>
+          </div>
+          <div class="form-check  religionclass col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="ReligionChrist">
+            <label class="form-check-label" for="ReligionChrist">
+              christian
+            </label>
+          </div>
+        </div>
+        <div class="d-md-flex mt-md-2">
+          <div class="form-check  religionclass col-md-4">
+            <input class="form-check-input" type="radio" name="Gender" id="ReligionBuddah">
+            <label class="form-check-label" for="ReligionBuddah">
+              Buddhism
+            </label>
+          </div>
+          <div class="form-check  religionclass col-md-2">
+            <input class="form-check-input" type="radio" name="Gender" id="ReligionOthers">
+            <label class="form-check-label" for="ReligionOthers">
+              Others
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPhone" class="form-label">Phone No.</label>
+        <input type="phone" class="form-control" id="inputPhone">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Division</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>Dhaka</option>
+          <option>Rajshahi</option>
+          <option>Shylhet</option>
+          <option>Chittagong</option>
+          <option>Rangpur</option>
+          <option>Barisal</option>
+          <option>Khulna</option>
+          <option>Maymansing</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputRepeatPassword4" class="form-label">Repeat Password</label>
+        <input type="password" class="form-control" id="inputRepeatPassword4">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Agree With The Term & Condition
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </form>
+  </div>
+  <!-- signuo form ends here  -->
+
 
   <!-- footer strat from here -->
   <footer class="text-center text-lg-start bg-light text-muted">

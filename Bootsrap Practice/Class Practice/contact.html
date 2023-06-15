@@ -121,7 +121,8 @@
     </div>
     <div class="col-md-12">
       <label for="validationCustom05" class="form-label">Message</label>
-      <textarea name="" id="validationCustom05" class="form-control" cols="30" rows="5" placeholder="Enter Your Message" style="resize: none;"></textarea>
+      <textarea name="" id="validationCustom05" class="form-control" cols="30" rows="5" placeholder="Enter Your Message"
+        style="resize: none;" required></textarea>
       <div class="valid-feedback">
         Looks valid phone number!
       </div>
@@ -214,6 +215,27 @@
   <!-- footer ends here -->
 
   <script src="./asset/js/bootstrap.bundle.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 </body>
 
 </html>

@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="./asset/icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <link rel="stylesheet" href="./asset/css/responsive.css">
+
+  <style>
+    .signinform {
+        margin: 10px;
+        padding: 50px;
+    }
+</style>
 </head>
 
 <body>
@@ -89,15 +96,35 @@
     </div> -->
   <!-- breadcrumb ends Here -->
 
-  <div style="width:100%;height:450px;border:1px solid red;"></div>
-
+  <!-- signin form start here -->
+  <div class="signinform">
+    <form class="row g-3">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="col-12 d-md-flex justify-content-center align-content-center ">
+        <button type="submit" class="btn btn-primary mb-0">Confirm identity</button>
+      </div>
+      <div class="col-12 d-md-flex justify-content-center align-content-center">
+        <a href="#" class="me-3 text-decoration-none">Forget Password?</a>
+        <a href="signup.html" class="text-decoration-none">SignUp</a>
+      </div>
+    </form>
+  </div>
+  <!-- signin form ends here  -->
+  
   <!-- footer strat from here -->
-  <footer class="text-center text-lg-start bg-light text-muted">
+  <footer class="text-center text-lg-start bg-light text-muted mt-5">
     <!-- Section: Social media -->
     <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom footer-upper-text-section">
       <!-- Left -->
-      <div class="me-5 d-none d-lg-block ms-auto">
+      <div class="me-5 d-lg-block ms-auto">
         <span>Get connected with us on social networks:</span>
       </div>
       <!-- Left -->
@@ -126,7 +153,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start mt-5 mb-3">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
