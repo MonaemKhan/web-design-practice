@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font_regular: 'Roboto', sans-serif;
+    --font_style_italic: 'Sacramento', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font_regular);
+    background-color: antiquewhite;
+}
+
+
+/* nav bar start from here */
+
+.navbar {
+    background: linear-gradient(to bottom right, #00cc00 0%, #3399ff 100%);
+}
+
+.navbar .navbar-brand {
+    margin-right: 100px;
+    margin-left: 30px;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .sign-in-up {
+    color: black !important;
+    background-color: rgb(96, 134, 240);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+}
+
+.navbar .signinout-outter-class {
+    margin-right: 50px;
+}
+
+/* nav bar ends here */
+
+/* breadcrump design start here  */
+.breadcrumb-item-heading {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black !important;
+    font-family: var(--font_style_italic);
+}
+
+.breadcrumb-item-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* breadcrump design ends here  */
+
+/* carosel design start here  */
+.carousel .carousel-inner .carousel-item img{
+    width: 100% !important;
+    height: 600px;
+}
+
+.carousel-indicators button{
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid;
+    border-radius: 50%;
+}
+/* carosel design ends here  */
+
+/* contact page design start here  */
+.form-design{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+/* contact page design ends here  */
+
+/* footer design start here  */
+.footer-upper-text-section {
+    background-color: gray !important;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.footer-upper-icon-section a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* footer design ends here  */
+
+/* content menubar design starts */
+
+.main-menu .row .card:hover img{
+    transform: scale(1.1);
+    transition: .6s;
+}
+.main-menu .row .card{
+    border: 2px solid #3399ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.main-menu .row .card .card-body{
+    position: relative;
+}
+
+.main-menu .row .card .card-body .card-botton{
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.main-menu .row .card .card-body .card-botton button:hover{
+    color: black;
+    background-color: white;
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

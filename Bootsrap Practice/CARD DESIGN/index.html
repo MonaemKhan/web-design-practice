@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/icons/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="./asset/css/responsive.css"> -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <style>
+        .banner {
+            width: 100%;
+            height: 120px;
+            background: #000b76;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-image: url('./asset/images/wave\ \ top.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: .3;
+        } */
+
+        .card-heading::after {
+            content: "";
+            position: absolute;
+            top: 120px;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-image: url('./asset/images/wave\ \ top.svg');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+        }
+
+        .card-heading-img img {
+            margin-top: -75px;
+            z-index: 1;
+        }
+
+        .card {
+            width: 15%;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="card mt-5">
+            <div class="banner">
+            </div>
+            <div class="card-heading border border-3 ">
+                <div class="d-flex justify-content-center align-content-center card-heading-img">
+                    <img src="./asset/images/M.A.Monaem Khan.png" alt="" width="150" height="150"
+                        class="rounded-circle border border-5 bg-info border-white">
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                    <h3 class="fw-bold">M.A. Monaem Khan</h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Khanmonaem07@gmail.com</li>
+                        <li class="list-group-item"><i class="bi bi-telephone-fill"></i> +8801303271849</li>
+                        <li class="list-group-item"><i class="bi bi-globe2"></i> <a href="#"
+                                class="text-decoration-none text-dark"> www.monaemkhan.com</a></li>
+                        <li class="list-group-item"><i class="bi bi-geo-alt-fill"></i> Chapainawabgonj</li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-evenly fs-3">
+                    <a href="@" class="me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="@" class="me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="@" class="me-3 text-success"><i class="bi bi-whatsapp"></i></a>
+                    <a href="@" class="me-3 text-info"><i class="bi bi-twitch"></i></a>
+                    <a href="@" class="text-danger"><i class="bi bi-google"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./asset/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
