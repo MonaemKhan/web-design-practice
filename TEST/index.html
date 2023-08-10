@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+</head>
+
+<body>
+    
+
+    <script>
+
+        function ActionOfButton() {
+            console.log("I am In");
+            var num = parseInt(document.getElementById("OptionButtonBox").value);
+            console.log(num);
+            var optiondiv = document.getElementById("OptionDiv");
+            // optiondiv.innerHTML = " ";
+
+            for (var i = 1; i < num; i++) {
+                var textbox = document.createElement("input");
+                textbox.type = "text";
+                textbox.className = "option mb-3";
+                optiondiv.appendChild(textbox)
+            }
+        }
+
+        function GetData() {
+            var options = document.querySelectorAll("#OptionDiv input");
+            values = [];
+            options.forEach(function(data){
+                values.push(data.value);
+            })
+            var text = {
+                // "Question": document.getElementById("QuestionText").innerText,
+                "Option": values
+            }
+            console.log(text)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .signIn-form {
+            border: 2px solid #CFCFCF;
+            padding: 20px 20px;
+            border-radius: 8px;
+        }
+
+        .signIn-form form label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .signIn-form form label span {
+            color: red;
+        }
+
+        .signIn-form form input {
+            font-size: 14px;
+        }
+
+        .signIn-form form select {
+            font-size: 14px;
+        }
+
+        .signIn-form form select option {
+            font-size: 14px;
+        }
+
+        .signIn-form form button {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SignIn Form Start -->
+    <div class="container mt-5">
+        <div class="signIn-form">
+            <form action="">
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="firstName" class="form-label">First Name <span>*</span></label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="middleName" class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" id="middleName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="email" class="form-control" id="lastName" placeholder="Middle Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="gender" class="form-label d-block">Gender <span>*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mt-1" type="radio" name="gender" id="male">
+                                <label class="form-check-label" for="male" style="font-weight: normal;">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mt-1" type="radio" name="gender" id="male">
+                                <label class="form-check-label" for="male" style="font-weight: normal;">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="email" class="form-label">Email <span>*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="password" class="form-label">Password <span>*</span></label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mb-1">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state">
+                                <option selected>Choose...</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="rangpur">Rangpur</option>
+                                <option value="mymensing">Mymensing</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-1">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input mt-2" type="checkbox" value="" id="checkMeOut">
+                            <label class="form-check-label" for="checkMeOut">
+                                Check me out <span>*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- SignIn Form End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
