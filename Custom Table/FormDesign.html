@@ -8,70 +8,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="datatableprint.css">
-    <link rel="stylesheet" href="datatableprint_jQuery.css">
-    <script src="DataTable_JQuery.js"></script>
-    <script src="DataTable_JQuery2.js"></script>
-    <script src="DataTable_JQuery3.js"></script>
-    <script src="DataTable_JQuery4.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
     <style>
-        #CustomDataTable_filter{
-            display: none;
+        .dataTables_info{
+            visibility: hidden;
         }
-        #CustomDataTable_info{
-            display: none;
-        }
-        #CustomDataTable_paginate{
-            display: none;
-        }
-        tr th{
-            display: none;
-        }
-        .card {
-        border: 1px solid gold;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    td:nth-child(odd){
-        text-align: right !important;
-    }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <div class="row ms-5 mb-3">
-            <table id="CustomDataTable" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                    </tr>
-            </table>
-            <h3>Are you sure you want to delete Customer @Model.CustomerName?</h3>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function() {
-    $('#CustomDataTable').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'print'
-        ]
-    } );
-} );
-    </script>
+    <table id="MyTable" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+                <th>Extn.</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger</td>
+                <td>Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+                <td>5421</td>
+                <td>t.nixon@datatables.net</td>
+            </tr>            
+        </tbody>
+    </table>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script>
+        new DataTable('#MyTable', {
+            responsive: {
+                details: false
+            },
+            ordering: false
+        });
+    </script>
 </body>
 
 </html>

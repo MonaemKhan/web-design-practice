@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <div class="p-5">
+        <h2>Employee From</h2>
+        <hr>
+        <form>
+            <div class="d-flex ms-3 me-5 mt-3">
+                <div class="col-md-6 me-4">
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">Name </label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5 mt-1">Gender </label>
+                        </div>
+                        <div class="col-md-9 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="EmployeeGender" id="Male">
+                                <label class="form-check-label" for="Male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="EmployeeGender" id="Female">
+                                <label class="form-check-label" for="Female">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="EmployeeGender" id="Others">
+                                <label class="form-check-label" for="Others">
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">Education </label>
+                        </div>
+                        <div class="col-md-9 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="SSC">
+                                <label class="form-check-label" for="SSC">
+                                    SSC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="HSC">
+                                <label class="form-check-label" for="HSC">
+                                    HSC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="BSC">
+                                <label class="form-check-label" for="BSC">
+                                    BSC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="MSC">
+                                <label class="form-check-label" for="MSC">
+                                    MSC
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">Address </label>
+                        </div>
+                        <div class="col-md-9">
+                            <textarea type="text" class="form-control" style="resize: none;"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">Country Name </label>
+                        </div>
+                        <div class="col-md-9">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">State Name </label>
+                        </div>
+                        <div class="col-md-9">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">City Name </label>
+                        </div>
+                        <div class="col-md-9">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="d-flex mb-4 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label me-5">Upload Photo </label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="file" id="FileUpload" onchange="PreviewImage()" accept="image/*"/>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4 align-items-center justify-content-center">
+                        <img src="./default_user.png" alt="default user"
+                            style="border: 2px solid lightblue;border-radius: 10px;" class="img-thumbnail" id="UploadFile">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="col-md-6">
+                    <a href="#" class="btn btn-outline-primary">Back to Index</a>
+                </div>
+                <div><input type="submit" value="Create" class="btn btn-primary" /></div>
+            </div>
+
+        </form>
+
+    </div>
+    <script>
+        //image preview
+        function PreviewImage() {
+            var oFReader = new FileReader();
+            oFReader.readAsDataURL(document.getElementById("FileUpload").files[0]);
+            oFReader.onload = function (oFREvent) {
+                document.getElementById("UploadFile").src = oFREvent.target.result;
+            };
+        }
+    </script>
+</body>
+
+</html>
