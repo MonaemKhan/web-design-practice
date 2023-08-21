@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'EB Garamond', serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .aboutme-section {
+            background-color: lightgoldenrodyellow;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+<aboutme>
+    <div class="d-md-flex aboutme-section p-5">
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+            <img src="./images/Monaem_Khan.jpg" alt="Monaem Khan" style="border-radius:50%;"
+                class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-md-6 d-inline-flex justify-content-center align-items-center">
+            <div>
+                <h3 class="textslide">H</h3>
+                <h5 style="text-align: justify;">A computer science student passionate about programming and design. I
+                    compited my B.Sc Engg. in CSE from Rangamati Science and Technology University.</h5>
+                <h5>I love to do coding and problem solving and have a thirst for learning new things.</h5>
+                <a href="#" class="btn btn-outline-success col-12 mt-4">See My Work</a>
+            </div>
+        </div>
+    </div>
+</aboutme>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var se = document.querySelector('.textslide');
+        var text = `Hi! I'm M.A. Monaem Khan`;
+        var index = 0;
+        function type() {
+            se.innerHTML = text.substring(0, index);
+            index++;
+            if (index == text.length) {
+                index = 1;
+            }
+            setTimeout(type, 300);
+        }
+        type();
+        // se.innerHTML = text;
+    </script>
+</body>
+
+</html>
