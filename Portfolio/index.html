@@ -18,17 +18,16 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            letter-spacing: 2px;
+            /* line-height: 20px; */
         }
 
         .side-contact-menu {
-            background-color: #ffffcc;
             width: 200px;
             height: 250px;
-            border: 1px solid;
-            border-radius: 50%;
             position: fixed;
             left: -125px;
-            top: 35%;
+            top: 40%;
         }
 
         .side-contact-menu div {
@@ -37,6 +36,8 @@
         }
 
         .side-contact-menu:hover {
+            border-radius: 50%;
+            background-color: #27dfc0;
             transform: scale(1.2);
             transition: all .5s;
         }
@@ -46,6 +47,7 @@
         }
 
         .side-contact-menu a svg:hover {
+            color: azure;
             transform: scale(1.2);
             transition: all .5s;
         }
@@ -54,32 +56,50 @@
             display: flex !important;
             position: sticky !important;
             top: 0px;
-            background-color: #ffffcc !important;
+            background-color: #27dfc0 !important;
             z-index: 1;
         }
 
         a img {
             width: 80px;
             border-radius: 50%;
+            background-color: aliceblue;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
 
         .nav-item a {
-            width: 80px;
+            width: fit-content;
+            padding: 10px;
+            margin-right: 10px;
             text-align: center;
+            font-weight: bolder !important;
+            ;
             font-size: 24px !important;
             color: black !important;
         }
 
         .nav-item a:hover {
-            border-bottom: 4px solid lightskyblue;
-            border-radius: 10px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            transition: all .1s;
+            /* background-color: rgb(117, 109, 224); */
+            color: white !important;
+            /* border-radius: 20px; */
+            /* transition: all 1s; */
+        }
+
+        .nav-item a:active {
+            color: blue !important;
         }
 
         .aboutme-section {
-            height: 70vh;
+            height: fit-content;
+            padding: 10px;
+        }
+
+        .aboutme-section .card {
+            background-color: transparent;
+            margin-right: 30px;
+            width: 800px;
+            height: fit-content;
+            border: none;
         }
 
         .aboutme-section .textslide {
@@ -106,15 +126,16 @@
         }
 
         .skill .card {
+            background-color: transparent;
             margin-right: 30px;
             width: 300px;
-            height: 310px;
+            height: 350px;
             margin: 10px;
             border: none;
         }
 
         .skill .card:hover {
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
             transform: scale(1.1);
             transition: all .8s;
         }
@@ -158,12 +179,54 @@
         }
 
         .edu-tra-job-details div:hover {
-            background-color: gainsboro;
+            /* background-color: gainsboro; */
             transform: scale(1.1);
-            border-radius: 15px;
+            /* border-radius: 15px; */
             transition: all .5s;
         }
 
+        .project .carousel-item img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .project .card {
+            margin-right: 30px;
+            width: 400px;
+            height: 445px;
+            margin: 10px;
+            border: none;
+        }
+
+        .project .card-body {
+            text-align: justify;
+            color: black;
+        }
+
+        .project .card-body h5 {
+            font-weight: bold;
+            color: black;
+        }
+
+        .research .card {
+            margin-right: 30px;
+            width: 800px;
+            height: 610px;
+            margin: 10px;
+            border: none;
+        }
+
+        .research .card-body {
+            text-align: justify;
+            color: black;
+            border: 3px solid gray;
+            border-radius: 20px;
+        }
+
+        .research .card-body h5 {
+            font-weight: bold;
+            color: black;
+        }
 
         footer {
             position: fixed;
@@ -236,7 +299,16 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#skill-section">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education-section">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research-section">Research</a>
                     </li>
                 </ul>
             </div>
@@ -244,29 +316,37 @@
     </nav>
 
     <aboutme>
-        <div class="d-md-flex aboutme-section p-5">
-            <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
-                <img src="./images/Monaem_Khan.jpg" alt="Monaem Khan" style="border-radius:50%;">
+        <div class="d-flex aboutme-section justify-content-center align-items-center flex-wrap">
+            <div class="card d-flex justify-content-center align-items-center">
+                <div class="card-body">
+                    <img src="./images/Monaem_Khan.jpg" alt="Monaem Khan"
+                        style="border-bottom-right-radius:30%;border-bottom-left-radius: 10%; height: 70%;">
+                </div>
             </div>
-            <div class="col-md-6 d-inline-flex justify-content-center align-items-center">
-                <div>
-                    <h3 class="textslide">H</h3>
-                    <h5 style="text-align: justify;">A computer science student passionate about programming and design.
-                        I
-                        compited my B.Sc Engg. in CSE from Rangamati Science and Technology University.</h5>
-                    <h5>I love to do coding and problem solving and have a thirst for learning new things.</h5>
-                    <a href="#" class="btn btn-outline-success col-12 mt-4">See My Work</a>
-                    <a href="#" class="btn btn-outline-success col-12 mt-4">Download My Resume</a>
+
+            <div class="card">
+                <div class="card-body fs-5">
+                    <div>
+                        <h1 class="textslide">H</h1>
+                        <h4 style="text-align: justify;">A computer science student passionate about programming and
+                            design.
+                            I compited my B.Sc Engg. in CSE from Rangamati Science and Technology University.</h4>
+                        <h4>I love to do coding and problem solving and have a thirst for learning new things.</h4>
+                        <div class="d-flex justify-content-between">
+                            <a href="#project section" class="btn btn-info col-5 mt-4 fs-4">See My Work</a>
+                            <a href="#" class="btn btn-info mt-4 col-5 fs-4">Download My Resume</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </aboutme>
 
     <skill>
-        <div class="skill mt-5">
-            <h1 class="text-center mb-5" style="font-family: 'Courgette', cursive;">My Skill And Experties</h1>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="border border-3 border-warning" style="width: 84%;"></div>
+        <div class="skill mt-5" id="skill-section">
+            <h1 class="text-center" style="font-family: 'Courgette', cursive;">My Skill And Experties</h1>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div class="border-top border-3 border-success" style="width: 84%;"></div>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-wrap">
                 <div class="card">
@@ -379,6 +459,17 @@
                 </div>
 
                 <div class="card">
+                    <img src="./images/GitHub-logo.png" class="card-img-top" alt="Github">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Github</h5>
+                        <p class="card-text">
+                            Using Github, I can manage my projects and collaborate with other through brunching, merging
+                            and pull request.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
                     <img src="./images/fullstack.png" class="card-img-top ps-4 pe-4" alt="fullstack">
                     <div class="card-body">
                         <h5 class="card-title">Full Stack</h5>
@@ -411,13 +502,18 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div class="border-top border-3 border-success" style="width: 84%;"></div>
+            </div>
         </div>
     </skill>
 
     <education>
-        <h1 class="text-center mt-4 mb-3" style="font-family: 'Courgette', cursive;">Education, Training and Job Experience</h1>
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="w-75 border border-3 border-warning"></div>
+        <h1 class="text-center mb-2" id="education-section" style="font-family: 'Courgette', cursive;">Education,
+            Training and Job
+            Experience</h1>
+        <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="border-top border-3 border-success" style="width: 75%;"></div>
         </div>
         <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
             <div class="d-flex w-75 d-flex justify-content-center flex-wrap">
@@ -479,7 +575,405 @@
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-center align-items-center mb-4">
+            <div class="border-top border-3 border-success" style="width: 75%;"></div>
+        </div>
     </education>
+
+    <project>
+        <div class="project" id="project section">
+            <h1 class="text-center" style="font-family: 'Courgette', cursive;">Project Work</h1>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div class="border-top border-3 border-success" style="width: 88%;"></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/Inventory MGT/Monthly Sale Details.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Inventory MGT/profit monthly.png" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Inventory MGT/SalesMan Commission Monthly.png"
+                                    class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Mini Inventory Management Syatem</h5>
+                        <p class="card-text">
+                            Using .NET Core MVC and Web API, I design a web application where a company executive can
+                            tract
+                            their product purches and sell information. Find out daily, monthly and overall profit,
+                            salesmans commission, and stock details.
+                            <a
+                                href="https://github.com/MonaemKhan/DOt-Net-Core-API-Core-MVC-Projects/tree/main/MiniInventoryManagementSystem">See
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/Employee Profile/index.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Employee Profile/details.png" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Employee Profile/Create.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Employee Profile View</h5>
+                        <p class="card-text">
+                            Using .NET Core MVC and Web API, I design a web application where a company executive can
+                            tract
+                            their employee details.
+                            <a
+                                href="https://github.com/MonaemKhan/DOt-Net-Core-API-Core-MVC-Projects/tree/main/EmployeeDetails">See
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/HRM/Create.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/HRM/Index.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Human Resource Management System</h5>
+                        <p class="card-text">
+                            Using .NET Core MVC and Web API, I design a web application with my team at US Software Ltd.
+                            Where a HR can tract all the information of employee, review their profile, salary and leave
+                            application. (this project belong to the parent company, so details of this project is not
+                            available)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/Defence Person Database MGT System/Picture1.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Defence Person Database MGT System/Picture2.png"
+                                    class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Defence Person Database MGT System/Picture3.png"
+                                    class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Defence Person DBMS</h5>
+                        <p class="card-text">
+                            Using Java and JavaFx, I design a desktop application where a defence authority can and an
+                            individual defence person can access their information by createing or searching.A online
+                            leave
+                            application feature is done here, where an individual can apply for leave and his/her's
+                            leave
+                            application status.
+                            <a href="https://github.com/MonaemKhan/Army-database-management-system">See More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/Online Bus Ticket/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/Online Bus Ticket/3.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Online Bus Ticket Booking Web page design</h5>
+                        <p class="card-text">
+                            Using HTML, CSS, JS and JQuery, I design a web page for purchesing bus ticket online.
+                            <a href="https://github.com/MonaemKhan/Bus-Ticket-Booking-Online-web-design">See More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/ahp.png" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Get You Decision</h5>
+                        <p class="card-text">
+                            Using HTML, CSS and JS, I design a web page for my 6th semister Arificial Intelegence (AI)
+                            project. The main role of this web page is to help in decission makking using AHP ANP.
+                            <a href="https://github.com/MonaemKhan/Simple-Desision-Making-AHP-ANP-web-Design">See
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/cryptography.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Encription and Decription of Text</h5>
+                        <p class="card-text">
+                            Using Python, I design a hybride cryptography algorithm using 3 different algorithm, they
+                            are ,<br>1. Cease Cipher Algorithm. 2. Mono Cipher Algorithm 3. Play Fair Algorithm.
+                            <br> And also use stagnography to hide the automatically generated key inside the actual
+                            cipher.
+                            <a
+                                href="https://github.com/MonaemKhan/Cryptography-and-Network-lab/tree/main/Cryptography%20Lab%20Projects">See
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Projects/diabeties.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Projects/diabeties1.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Early Prediction of Diabeties</h5>
+                        <p class="card-text">
+                            Using python and Machine Learning (ML) Model, I design a web application where any
+                            individual can check their persentage of chance of having diabeties through their report.
+                            <a
+                                href="https://github.com/MonaemKhan/Early-Diabetes-Prediction-Using-Machine-Learning/tree/main">See
+                                More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="https://github.com/MonaemKhan?tab=repositories" class="btn btn-primary"> See All My Work on
+                    Github</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="border-top border-3 border-success" style="width: 88%;"></div>
+            </div>
+        </div>
+    </project>
+
+    <research>
+        <div class="research mt-5" id="research-section" style="margin-bottom: 100px;">
+            <h1 class="text-center" style="font-family: 'Courgette', cursive;">Research's</h1>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div class="border-top border-3 border-success" style="width: 86%;"></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-capitalize"> <span class="text-info fw-bold">Title:</span> Risky
+                            Pregnent Mother Classification
+                            Using Machine Learning</h2>
+                        <p class="card-text fs-5">
+                            <br><span class="text-info fw-bold">Purpose:</span> The Main Purpose of this research is to
+                            find out a new way of taking
+                            decisions to classify a risky pregnant mother, on the absence of doctor.
+                            <br><br><span class="text-info fw-bold">Data Collection Process:</span> Collect Raw data
+                            from various hospitals of
+                            Rangamati, Khagrachori and Bandarban, which provide maternal care for pregnant mothers. And
+                            transform those raw page data into Machine analysis fessible data.
+                            <br><br><span class="text-info fw-bold">Result:</span> Machine Learning Model's "Random
+                            Forest Algorithm" shows great
+                            accuracy on classifying risky pregnant accurately.
+                            <br><br><span class="text-info fw-bold">Aurthor:</span> <span class="fw-bold">' M.A. Monaem
+                                Khan '</span>.
+                            <br>[<span class="text-danger fw-bold">Not Published Yet</span>]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body fs-5">
+                        <h2 class="card-title text-capitalize"> <span class="text-info fw-bold">Title:</span> Use
+                            Data Analysis to Boostup Strutup Bussiness</h2>
+                        <p class="card-text">
+                            <br><span class="text-info fw-bold">Purpose:</span> The Main Purpose of this research is to
+                            find out the effectiveness of data analysis to boostup any new startup small bussiness by
+                            find out customer choices and their buying behabiour.
+                            <br><br><span class="text-info fw-bold">Data Collection Process:</span> Collect Raw data
+                            from my friend "Roksana Aktar" as she starts a new online bussiness of selling local product
+                            of Rangamati to all over Bangladesh. Name of her online business is <a
+                                href="https://www.facebook.com/groups/938554999551589/?ref=share&mibextid=NSMWBT"
+                                class="text-decoration-none">"উড়াল"</a>
+                            <br><br><span class="text-info fw-bold">Result:</span> After analyzing 1 year of customer
+                            data, we find out the hot selling product and customer buying behavior. So rather then
+                            advertising randomly, she has some selected product and selected location for advertising
+                            her business. And after 3 month her revinue reached beyond her expectation.
+                            <br><br><span class="text-info fw-bold">Aurthor:</span> <span class="fw-bold">' M.A. Monaem
+                                Khan '</span> & <span class="fw-bold"> ' Roksana Akter '</span>.
+                            <br>[<span class="text-danger fw-bold">Not Published Yet</span>]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </research>
 
     <footer>
         <div class="d-flex justify-content-evenly">
@@ -490,10 +984,12 @@
             </div>
             <div class="d-flex justify-content-between">
                 <p>
-                    <i class="bi bi-telephone"></i> +8801303271849
+                    <a href="tel:+8801303271849" class="text-decoration-none text-dark"><i class="bi bi-telephone"></i>
+                        +8801303271849</a>
                 </p>
                 <p>
-                    <i class="bi bi-envelope"></i> khanmonaem07@gmail.com
+                    <a href="mailto:khanmonaem07@gmail.com" class="text-decoration-none text-dark"><i
+                            class="bi bi-envelope"></i> khanmonaem07@gmail.com</a>
                 </p>
                 <p>
                     <i class="bi bi-geo-alt"></i> 127/6 Mistripara, Chapainawabgonj
@@ -501,6 +997,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
